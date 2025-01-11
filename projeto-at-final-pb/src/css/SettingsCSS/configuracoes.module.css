@@ -1,0 +1,104 @@
+.configContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.app.dark .configContainer {
+  background-color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  transition: color 0.3s;
+}
+
+.app.dark .title {
+  color: #fff;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.app.dark .option {
+  background-color: #444;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  flex: 1;
+  transition: color 0.3s;
+}
+.app.dark .label {
+  color: #ccc;
+}
+
+.button {
+  background-color: #46178f;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.app.dark .button {
+  background-color: #6a2e9c;
+}
+
+.button:hover {
+  background-color: #cf99d4;
+}
+
+.select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.app.dark .select {
+  background-color: #555;
+  border-color: #888;
+  color: #fff;
+}
+
+.select:hover {
+  border-color: #46178f;
+}
+
+.app.dark .select:hover {
+  border-color: #6a2e9c;
+}

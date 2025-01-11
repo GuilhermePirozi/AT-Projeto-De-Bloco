@@ -1,0 +1,133 @@
+.loginPage_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.logoContainer {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: #ffffff; */
+  border-radius: 16px 16px 0 0;
+  width: 90%;
+  max-width: 360px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.logoImage {
+  width: 180px;
+  object-fit: contain;
+}
+
+.inputField {
+  margin: 4px 0;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #6a11cb;
+  box-shadow: 0 0 5px rgba(106, 17, 203, 0.3);
+}
+
+.submitButton {
+  margin-top: 10px;
+  padding: 12px;
+  background: #6a11cb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.submitButton:hover {
+  background: #4a0f9e;
+}
+
+.error {
+  color: #ff4d4f;
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.switchMode {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #6a11cb;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.switchMode:hover {
+  color: #4a0f9e;
+}
+
+.socialLogins {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.socialLogins button {
+  width: 48%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.socialLogins .googleLogin {
+  background: #db4437;
+  color: #fff;
+}
+
+.socialLogins .googleLogin:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(219, 68, 55, 0.3);
+}
+
+.socialLogins .facebookLogin {
+  background: #4267b2;
+  color: #fff;
+}
+
+.socialLogins .facebookLogin:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(66, 103, 178, 0.3);
+}

@@ -1,0 +1,41 @@
+.settingsPage {
+  display: flex;
+  height: 84vh;
+  background-color: #f4f4f4;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #350877;
+  color: white;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.sidebar ul li .link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  display: block;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li .link:hover {
+  background-color: #5e16ca;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-left: 1px solid #ddd;
+}

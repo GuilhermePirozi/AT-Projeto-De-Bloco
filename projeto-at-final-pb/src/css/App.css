@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app.light {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app.dark {
+  background-color: #121212;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+  background-color: #1e90ff;
+  color: white;
+}
+
+button:hover {
+  background-color: #4682b4;
+}

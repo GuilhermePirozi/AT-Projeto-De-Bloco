@@ -1,0 +1,120 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  margin-top: -80px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  width: 90%;
+  max-width: 400px;
+  min-width: 300px;
+  height: 500px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cardTitle {
+  width: 100%;
+  background-color: #ff6b6b;
+  font-size: 1.5rem;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.cardTitleList {
+  background-color: #ff5252;
+}
+
+.cardTitleQuiz {
+  background-color: #ffcd2a;
+}
+
+.cardTitleRanking {
+  background-color: #481d70;
+}
+
+.cardsIMG {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.cardDescription {
+  padding: 15px;
+  text-align: left;
+  background-color: white;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  height: calc(40% - 30px);
+  border-radius: 0 0 10px 10px;
+}
+
+.cardDescription span {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.cardDescription p {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .cardContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 300px;
+    height: 520px;
+    margin: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    max-width: 350px;
+    height: 550px;
+  }
+
+  .cardTitle {
+    font-size: 1.6rem;
+  }
+
+  .cardDescription {
+    font-size: 1.1rem;
+  }
+}
+
+.backgroundContainer {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
